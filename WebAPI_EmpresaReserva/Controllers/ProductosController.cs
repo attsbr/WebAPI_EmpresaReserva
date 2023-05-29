@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -12,6 +13,14 @@ namespace WebAPI_EmpresaReserva
         // GET api/<controller>
         public IEnumerable<string> Get()
         {
+
+            Produto[] produtos = new Business.Models.Produto[]
+{
+            new Produto { Id = 1, Nome = "Camisa", Descricao = "Camisa de Mountain Bike Camisa de manga comprida Jersey Ciclismo" },
+            new Produto { Id = 2, Nome = "Calça", Descricao = "Calças Jeans Masculina Almix" },
+            new Produto { Id = 3, Nome = "Calçado", Descricao = "Loafer Afterburn M. Fit Wonted, Skechers, masculino" }
+            // Tênis Skechers Go Walk Max, Masculino
+};
             return new string[] { "value1", "value2" };
         }
 

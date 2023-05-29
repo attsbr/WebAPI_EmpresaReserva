@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace WebAPI_EmpresaReserva
+namespace Business
 {
     public class FilterConfig
     {
